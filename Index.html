@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>LostFriendFounder!</title>
+  </head>
+  <body>
+    <div class="navbar">
+      <a href="about-us.html" class="nav-item">Who are we?</a>
+    </div>
+
+    <div class="search-container">
+      <form id="searchForm" onsubmit="search(event)">
+        <input
+          type="text"
+          id="searchInput"
+          placeholder="Search for friends..."
+        />
+        <button type="submit">Search</button>
+      </form>
+    </div>
+
+
+
+    <div class="login-signup">
+      <button onclick="showConstructionMessage('login')">Login</button>
+      <button onclick="showConstructionMessage('signup')">Sign up</button>
+    </div>
+
+    <div class="construction-message" id="loginMessage">
+      This function is under construction!
+    </div>
+
+    <div class="construction-message" id="signupMessage">
+      This function is under construction!
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
