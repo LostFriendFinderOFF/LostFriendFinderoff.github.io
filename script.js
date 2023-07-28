@@ -5,10 +5,7 @@ function search(event) {
     console.log("Buscando por: " + searchTerm);
   
     if (searchTerm === "logo") {
-      window.location.href = "founder.html";
-    } else {
       document.getElementById('imagenDiv').innerHTML = '<img src="logo-hub.PNG" />';
-    }
   }
   
   function showConstructionMessage(formType) {
