@@ -2,7 +2,7 @@ function search(event) {
     event.preventDefault();
     var searchTerm = document.getElementById('searchInput').value.toLowerCase();
   
-    console.log("Buscando por: " + searchTerm);
+    console.log("Search by: " + searchTerm);
   
     if (searchTerm === "logo") {
       document.getElementById('imagenDiv').innerHTML = '<img src="logo-hub.PNG" />';
