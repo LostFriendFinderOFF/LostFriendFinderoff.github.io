@@ -206,4 +206,20 @@ body {
   75% { color: #ff00ff; } /* Magenta */
   100% { color: #ff8800; } /* Naranja */
 }
+.container {
+  position: relative;
+}
+
+.logo-container {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+}
+
+.logo-container img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  border: 2px solid #007BFF;
+}
   
