@@ -8,7 +8,7 @@ function search(event) {
       window.location.href = "founder.html";
     } else {
       // Mostrar la imagen predeterminada cuando no se encuentra "developer"
-      document.getElementById('imagenDiv').innerHTML = '<img src=""IMAGES/descarga (2).jpeg"" />';
+      document.getElementById('imagenDiv').innerHTML = '<img src="IMAGES/descarga (2).jpeg" />';
     }
   }
   
