@@ -23,7 +23,7 @@ function search(event) {
       messageElement.style.display = 'block';
       setTimeout(function () {
         messageElement.style.display = 'none';
-      }, 3000); // Ocultar el mensaje después de 3 segundos
+      }, 3000); 
     }
   }
   
