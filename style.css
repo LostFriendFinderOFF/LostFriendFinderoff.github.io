@@ -17,7 +17,7 @@ body {
 .login-signup button {
   margin-left: 5px;
   background-color: #007BFF;
-  color:  #FFFFFF;
+  color:  #030303;
   border: none;
   border-radius: 5px;
   padding: 10px;
@@ -132,7 +132,7 @@ body {
     background-color: #0056b3;
   }
   
-  /* Estilos para el botón de login / sign up */
+
   .login-signup {
     position: absolute;
     top: 10px;
