@@ -1,50 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <link rel="icon" type="image/png" href="icon.png">
-    <title>LostFriendFinder!</title>
-  </head>
-  <body>
-    <div class="navbar">
-      <a href="about-us.html" class="nav-item">Who are we?</a>
-    </div>
-
-    <div class="search-container">
-      <form id="searchForm" onsubmit="search(event)">
-        <input
-          type="text"
-          id="searchInput"
-          placeholder="Search for friends..."
-        />
-        <button type="submit">Search</button>
-      </form>
-    </div>
-    <div id="imagenDiv"></div>
-        <div class="content">
-      <!-- Add the Welcome text here -->
-      <h1 class="working-on-it">WORKING ON IT!</h1>
-    </div>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" href="icon.png">
+  <title>LostFriendFinder!</title>
+</head>
+<body>
+  <div class="navbar">
+    <a href="about-us.html" class="nav-item">Who are we?</a>
   </div>
 
-    <div class="login-signup">
-      <button onclick="showConstructionMessage('login')">Login</button>
-      <button onclick="showConstructionMessage('signup')">Sign up</button>
-    </div>
+  <div class="search-container">
+    <form id="searchForm">
+      <input type="text" id="searchInput" placeholder="Search for friends...">
+      <button type="submit">Search</button>
+    </form>
+  </div>
+  
+  <div class="lds-heart" id="loadingAnimation">
+    <div></div>
+  </div>
+  
+  <div id="imagenDiv"></div>
+  <div class="content">
+    <h1 class="working-on-it">WORKING ON IT!</h1>
+  </div>
 
-    <div class="construction-message" id="loginMessage">
-      This function is under construction!
-    </div>
+  <div class="login-signup">
+    <button onclick="showConstructionMessage('login')">Login</button>
+    <button onclick="showConstructionMessage('signup')">Sign up</button>
+  </div>
 
-    <div class="construction-message" id="signupMessage">
-      This function is under construction!
-    </div>
-    <div class="logo-container">
-  <img src=icon.png" alt="Logo" />
-</div>
+  <div class="construction-message" id="loginMessage">
+    This function is under construction!
+  </div>
 
-    <script src="script.js"></script>
-  </body>
+  <div class="construction-message" id="signupMessage">
+    This function is under construction!
+  </div>
+  
+  <div class="logo-container">
+    <img src="icon.png" alt="Logo">
+  </div>
+
+  <script src="script.js"></script>
+</body>
 </html>
