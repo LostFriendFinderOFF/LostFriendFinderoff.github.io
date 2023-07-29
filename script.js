@@ -16,9 +16,14 @@ function showConstructionMessage(formType) {
   }
 
   if (messageElement) {
-    messageElement.style.display = 'block';
+    messageElement.classList.add('active'); 
     setTimeout(function () {
-      messageElement.style.display = 'none';
+      messageElement.classList.remove('active');
     }, 3000);
   }
 }
+
+
+
+
+
