@@ -262,6 +262,9 @@ body {
   top: -24px;
   border-radius: 50% 50% 0 0;
 }
+.lds-heart {
+  display:none;
+}
 
 @keyframes lds-heart {
   0% {

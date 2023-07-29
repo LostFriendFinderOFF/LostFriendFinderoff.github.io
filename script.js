@@ -6,20 +6,9 @@ function search(event) {
   if (searchTerm === "logo") {
     document.getElementById('imagenDiv').innerHTML = '<img src="logo-hub.PNG" />';
   }
-}
 
-function showConstructionMessage(formType) {
-  var messageElement;
-  if (formType === 'login') {
-    messageElement = document.getElementById('loginMessage');
-  } else if (formType === 'signup') {
-    messageElement = document.getElementById('signupMessage');
-  }
-
-  if (messageElement) {
-    messageElement.classList.add('active');
-    setTimeout(function () {
-      messageElement.classList.remove('active');
-    }, 3000);
-  }
+  document.getElementById('loadingAnimation').style.display = 'inline-block';
+  setTimeout(function () {
+    document.getElementById('loadingAnimation').style.display = 'none';
+  }, 3000); // Adjust the delay (in milliseconds) as needed
 }
