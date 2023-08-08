@@ -1,288 +1,47 @@
-body {
-  font-family: Helvetica, sans-serif;
-  margin: 0;
-  padding: 0;
-  background-color: #f2f2f2;
+* {
+    @import url('https://fonts.googleapis.com/css2?family=Lexend&family=Poppins:ital,wght@0,300;0,400;0,500;0,700;1,400&family=Ubuntu:ital@1&display=swap');
 }
 
 .container {
-  position: relative;
-}
-
-.login-signup {
-  position: absolute;
-  top: 10px;
-  right: 10px;
-}
-
-.login-signup button {
-  margin-left: 5px;
-  background-color: #007BFF;
-  color: black;
-  border: none;
-  border-radius: 5px;
-  padding: 10px;
-  cursor: pointer;
-}
-
-.logo-container {
-  position: absolute;
-  bottom: 10px;
-  right: 10px;
-}
-
-.logo-container img {
-  width: 80px;
-  height: 80px;
-  border-radius: 50%;
-  border: 2px solid #007BFF;
-}
-
-.search-container {
-  display: flex;
-  justify-content: center;
-  margin-top: 20px;
-}
-
-.search-container form {
-  display: flex;
-  align-items: center;
-  background-color: #fff;
-  border-radius: 30px;
-  overflow: hidden;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-.search-container input[type="text"] {
-  flex: 1;
-  padding: 12px 20px;
-  font-size: 16px;
-  border: none;
-  outline: none;
-}
-
-.search-container button {
-  background-color: #007BFF;
-  color: #fff;
-  border: none;
-  padding: 10px 20px;
-  border-radius: 0 30px 30px 0;
-  cursor: pointer;
-  transition: background-color 0.3s;
-}
-
-.search-container button:hover {
-  background-color: #0056b3;
-}
-
-#imagenDiv {
-  display: flex;
-  justify-content: center;
-  margin-top: 20px;
-}
-
-#imagenDiv img {
-  max-width: 100%;
-  max-height: 300px;
-}
-
-.login-form,
-.signup-form {
-  display: none;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background-color: #f9f9f9;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  width: 300px;
-}
-
-.login-form h3,
-.signup-form h3 {
-  margin-top: 0;
-  margin-bottom: 15px;
-  text-align: center;
-  color: black;
-}
-
-.login-form input,
-.signup-form input {
-  display: block;
-  width: 100%;
-  padding: 10px;
-  margin-bottom: 15px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  font-size: 14px;
-}
-
-.login-form button,
-.signup-form button {
-  display: block;
-  width: 100%;
-  padding: 10px;
-  background-color: #007BFF;
-  color: black;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  font-size: 14px;
-  transition: background-color 0.3s;
-}
-
-.login-form button:hover,
-.signup-form button:hover {
-  background-color: #0056b3;
-}
-
-.login-signup {
-  position: absolute;
-  top: 10px;
-  right: 10px;
-}
-
-.login-signup button {
-  margin-left: 5px;
-  font-size: 14px;
-  cursor: pointer;
-  background-color: #f9f9f9;
-  border: 1px solid #007BFF;
-  border-radius: 5px;
-  padding: 6px 12px;
-  transition: background-color 0.3s;
-}
-
-.login-signup button:hover {
-  background-color: #007BFF;
-  color: white;
-}
-
-.construction-message {
-  font-size: 12px;
-  color: red;
-  margin-top: 5px;
-  margin-left: 5px;
-  position: absolute;
-  display: flex;
-}
-
-.pop-out {
-  display: block;
-  z-index: 1;
-}
-
-.navbar {
-  position: absolute;
-  top: 10px;
-  left: 10px;
-  background-color: transparent;
-  z-index: 1;
-}
-
-.nav-item {
-  color: #007BFF;
-  text-decoration: none;
-  font-size: 16px;
-  padding: 5px 10px;
-  border: 2px solid #007BFF;
-  border-radius: 5px;
-  transition: transform 0.2s;
-}
-
-.nav-item:hover {
-  transform: translateY(-2px);
-}
-
-.working-on-it {
-  font-size: 48px;
-  font-weight: bold;
-  text-align: center;
-  margin-top: 20px;
-  animation: colorChange 2s infinite;
-}
-
-@keyframes colorChange {
-  0% {
-    color: #ff0000;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    margin-top:650px;
   }
-  25% {
-    color: #00ff00;
+  
+  .searchInput-div {
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
   }
-  50% {
-    color: #0000ff;
+  
+  .searchInput {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background: url('https://cdn.jsdelivr.net/boxicons/2.1.4/svg/search.svg')
+      no-repeat 10px center;
+    background-size: 18px 18px;
+    padding-left: 40px; /* Adjust this value to position the icon */
+    box-sizing: border-box;
+    border-radius: 10px;
   }
-  75% {
-    color: #ff00ff;
+  
+  .searchButton {
+    margin-left: 10px;
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    border-radius: 10px;  
   }
-  100% {
-    color: #ff8800;
+  
+  .rights {
+    text-align: center;
+    color: #888;
+    padding: 10px;
+    margin-bottom:850px;
   }
-}
-
-/* Custom loading animation styles */
-
-.lds-heart {
-  display: inline-block;
-  position: relative;
-  width: 80px;
-  height: 80px;
-  transform: rotate(45deg);
-  transform-origin: 40px 40px;
-}
-
-.lds-heart div {
-  top: 32px;
-  left: 32px;
-  position: absolute;
-  width: 32px;
-  height: 32px;
-  background: #fff;
-  animation: lds-heart 1.2s infinite cubic-bezier(0.215, 0.61, 0.355, 1);
-}
-
-.lds-heart div:after,
-.lds-heart div:before {
-  content: " ";
-  position: absolute;
-  display: block;
-  width: 32px;
-  height: 32px;
-  background: #fff;
-}
-
-.lds-heart div:before {
-  left: -24px;
-  border-radius: 50% 0 0 50%;
-}
-
-.lds-heart div:after {
-  top: -24px;
-  border-radius: 50% 50% 0 0;
-}
-.lds-heart {
-  display:none;
-}
-
-@keyframes lds-heart {
-  0% {
-    transform: scale(0.95);
-  }
-  5% {
-    transform: scale(1.1);
-  }
-  39% {
-    transform: scale(0.85);
-  }
-  45% {
-    transform: scale(1);
-  }
-  60% {
-    transform: scale(0.95);
-  }
-  100% {
-    transform: scale(0.9);
-  }
-}
