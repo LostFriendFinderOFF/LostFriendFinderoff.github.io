@@ -4,174 +4,59 @@ body {
   padding: 0;
   background-color: #f2f2f2;
 }
+
 .search-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-left: 500px;
-    height: 80vh;
-    width: 50vh;
-  }
-  .search-box {
-    /* ... Otros estilos ... */
-    animation: colorChange 3s infinite;
-  }
-/*=============== GOOGLE FONTS ===============*/
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap");
-/*=============== VARIABLES CSS ===============*/
-:root {
-  /*========== Colors ==========*/
-  /*Color mode HSL(hue, saturation, lightness)*/
-  --first-color: hsl(222, 80%, 58%);
-  --dark-color: hsl(222, 24%, 8%);
-  --title-color: hsl(222, 8%, 8%);
-  --text-color-light: hsl(222, 8%, 65%);
-  --white-color: #fff;
-  --body-color: hsl(222, 100%, 99%);
-  /*========== Font and typography ==========*/
-  /*.5rem = 8px | 1rem = 16px ...*/
-  --body-font: "Poppins", sans-serif;
-  --small-font-size: .813rem;
-}
-@media screen and (min-width: 968px) {
-  :root {
-    --small-font-size: .875rem;
-  }
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 500px;
+  height: 80vh;
+  width: 50vh;
 }
 
-/*=============== BASE ===============*/
-* {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
+.search-box {
+  /* ... Otros estilos ... */
+  animation: colorChange 3s infinite;
 }
 
-body {
-  background-color: var(--body-color);
+/* Resto del CSS sigue aquí... */
+
+@keyframes colorChange {
+  0%, 100% { background-color: #fff; }
+  50% { background-color: #f0f0f0; }
 }
 
-/*=============== SEARCH ===============*/
-.container {
-  height: 100vh;
-  margin-inline: 1.5rem;
-  display: grid;
-  place-items: center;
-}
-
-.search {
+.search-box {
   position: relative;
-  width: 76px;
-  height: 76px;
-  background-color: var(--white-color);
-  box-shadow: 0 4px 24px hsla(222, 68%, 12%, 0.1);
-  border-radius: 4rem;
+  width: 300px;
   padding: 10px;
-  overflow: hidden;
-  transition: width 0.5s cubic-bezier(0.9, 0, 0.3, 0.9);
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
 }
-.search__input {
+
+.search-box input[type="text"] {
+  flex: 1;
   border: none;
   outline: none;
-  width: calc(100% - 64px);
-  height: 100%;
-  border-radius: 4rem;
-  padding-left: 14px;
-  font-family: var(--body-font);
-  font-size: var(--small-font-size);
-  font-weight: 500;
-  opacity: 0;
-  pointer-events: none;
-  transition: opacity 1.5s;
 }
-.search__input:-webkit-autofill {
-  box-shadow: 0 0 0 100px var(--white-color) inset;
-}
-.search__button {
-  width: 56px;
-  height: 56px;
-  background-color: var(--dark-color);
-  border-radius: 50%;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  right: 10px;
-  margin: auto;
-  display: grid;
-  place-items: center;
+
+.search-box button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 5px;
   cursor: pointer;
-  transition: transform 0.6s cubic-bezier(0.9, 0, 0.3, 0.9);
-}
-.search__icon, .search__close {
-  color: var(--white-color);
-  font-size: 1.5rem;
-  position: absolute;
-  transition: opacity 0.5s cubic-bezier(0.9, 0, 0.3, 0.9);
-}
-.search__close {
-  opacity: 0;
+  transition: background-color 0.3s;
 }
 
-/* Search animated */
-.show-search {
-  width: 100%;
+.search-box button:hover {
+  background-color: #0056b3;
 }
-.show-search .search__input {
-  opacity: 1;
-  pointer-events: initial;
-}
-.show-search .search__button {
-  transform: rotate(90deg);
-}
-.show-search .search__icon {
-  opacity: 0;
-}
-.show-search .search__close {
-  opacity: 1;
-}
-
-/*=============== BREAKPOINTS ===============*/
-/* For medium devices */
-@media screen and (min-width: 576px) {
-  .show-search {
-    width: 450px;
-  }
-}
-  @keyframes colorChange {
-    0%, 100% { background-color: #fff; }
-    50% { background-color: #f0f0f0; }
-  }
-
-  .search-box {
-    position: relative;
-    width: 300px;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    background-color: #fff;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    display: flex;
-    align-items: center;
-  }
-
-  .search-box input[type="text"] {
-    flex: 1;
-    border: none;
-    outline: none;
-  }
-
-  .search-box button {
-    background-color: #007bff;
-    color: #fff;
-    border: none;
-    padding: 8px 15px;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-  }
-
-  .search-box button:hover {
-    background-color: #0056b3;
-  }
 
 .container {
   position: relative;
@@ -372,85 +257,4 @@ body {
   animation: colorChange 2s infinite;
 }
 
-@keyframes colorChange {
-  0% {
-    color: #ff0000;
-  }
-  25% {
-    color: #00ff00;
-  }
-  50% {
-    color: #0000ff;
-  }
-  75% {
-    color: #ff00ff;
-  }
-  100% {
-    color: #ff8800;
-  }
-}
-
-/* Custom loading animation styles */
-
-.lds-heart {
-  display: inline-block;
-  position: relative;
-  width: 80px;
-  height: 80px;
-  transform: rotate(45deg);
-  transform-origin: 40px 40px;
-}
-
-.lds-heart div {
-  top: 32px;
-  left: 32px;
-  position: absolute;
-  width: 32px;
-  height: 32px;
-  background: #fff;
-  animation: lds-heart 1.2s infinite cubic-bezier(0.215, 0.61, 0.355, 1);
-}
-
-.lds-heart div:after,
-.lds-heart div:before {
-  content: " ";
-  position: absolute;
-  display: block;
-  width: 32px;
-  height: 32px;
-  background: #fff;
-}
-
-.lds-heart div:before {
-  left: -24px;
-  border-radius: 50% 0 0 50%;
-}
-
-.lds-heart div:after {
-  top: -24px;
-  border-radius: 50% 50% 0 0;
-}
-.lds-heart {
-  display:none;
-}
-
-@keyframes lds-heart {
-  0% {
-    transform: scale(0.95);
-  }
-  5% {
-    transform: scale(1.1);
-  }
-  39% {
-    transform: scale(0.85);
-  }
-  45% {
-    transform: scale(1);
-  }
-  60% {
-    transform: scale(0.95);
-  }
-  100% {
-    transform: scale(0.9);
-  }
-}
+/* Resto del CSS sigue aquí... */
